@@ -15,7 +15,7 @@ if(!file.exists(tmpfileDir)){
 }
 
 indbDatabaseName <- "canvasdb_test"
-annotationDatabaseName <- "canvasdb_annot_hg19"
+annotationDatabaseName <- "canvasdb_test_annot_hg19"
 
 ANNOVARpath <- "/Volumes/Data/tools/annovar/annotate_variation.pl" ## Add path to ANNOVAR executable
 ANNOVARpathDB <- "/Volumes/Data/tools/annovar/humandb/" ## Add path to ANNOVAR annotation database
