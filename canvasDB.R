@@ -299,7 +299,7 @@ addVariantData <- function(SNP.file, canvasId, seq.platform, library.type, read.
     query <- paste("SELECT sample_id FROM ",sample.table," WHERE canvas_id='",canvasId,"';",sep="")
     sampleId <- dbGetQuery_E(con,query,TALK=TALK)
 
-    if(length(sampleId) > 0){
+    if(nrow(sampleId) > 0){
         warning(paste("Sample '",canvasId,"' already exists in db. Run/sample data cannot be added.\n",sep=""))
         dbDisconnect(con)
         stop()
